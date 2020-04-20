@@ -1,3 +1,10 @@
+/*
+ * @Description: eslint 配置文件
+ * @Date: 2020-03-29 07:15:32
+ * @Author: JackChouMine
+ * @LastEditTime: 2020-04-21 02:50:04
+ * @LastEditors: JackChouMine
+ */
 module.exports = {
   root: true,
   env: {
@@ -11,7 +18,6 @@ module.exports = {
     parser: 'babel-eslint'
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'space-before-function-paren': [true, "never"]
   }
 }
