@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HelloWorld />
+    <HelloWorld ref="HelloWorld"/>
     <MyVueName />
     <MyRating />
   </div>
@@ -16,6 +16,9 @@ export default {
     HelloWorld,
     MyVueName,
     MyRating
+  },
+  mounted() {
+    console.log(this.$refs.HelloWorld.exposeMethod())
   }
 }
 </script>
