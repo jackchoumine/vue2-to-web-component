@@ -2,11 +2,12 @@
  * @Description: 应用入口
  * @Date: 2020-03-29 07:15:32
  * @Author: JackChouMine
- * @LastEditTime: 2020-04-21 02:40:07
- * @LastEditors: JackChouMine
+ * @LastEditTime: 2022-01-16 20:26:36 +0800
+ * @LastEditors : JackChou
  */
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
 
 Vue.config.productionTip = false // todo: 待完成
 
@@ -19,5 +20,7 @@ console.log(hello)
  * note hello
  */
 new Vue({
-  render: h => h(App) // bug:这是bug,需要修复
+  router,
+  // bug:这是bug,需要修复
+  render: h => h(App)
 }).$mount('#app')
