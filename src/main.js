@@ -2,7 +2,7 @@
  * @Description: 应用入口
  * @Date: 2020-03-29 07:15:32
  * @Author: JackChouMine
- * @LastEditTime: 2022-01-16 23:48:16 +0800
+ * @LastEditTime: 2022-01-17 01:08:13 +0800
  * @LastEditors : JackChou
  */
 import Vue from 'vue'
