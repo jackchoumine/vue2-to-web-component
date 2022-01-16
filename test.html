@@ -2,7 +2,7 @@
  * @Description :
  * @Date        : 2022-01-17 00:09:08 +0800
  * @Author      : JackChou
- * @LastEditTime: 2022-01-17 00:22:54 +0800
+ * @LastEditTime: 2022-01-17 01:01:33 +0800
  * @LastEditors : JackChou
 -->
 <!DOCTYPE html>
@@ -22,6 +22,9 @@
     document.addEventListener("DOMContentLoaded", () => {
       const myRating = document.querySelector('ng-bi-my-rating')
       myRating.buttonOptions = { size: 'mini', round: true }
+      const hello = document.querySelector('ng-bi-hello-world')
+      // NOTE vue 组件上的方法丢失了
+      // console.log(hello.exposeMethod())
     })
   </script>
 </head>

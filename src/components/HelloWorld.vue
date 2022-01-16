@@ -15,6 +15,11 @@ export default {
   },
   data() {
     return {}
+  },
+  methods: {
+    exposeMethod() {
+      return 'Hello World!'
+    }
   }
 }
 </script>
