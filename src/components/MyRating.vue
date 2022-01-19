@@ -2,7 +2,7 @@
  * @Description :
  * @Date        : 2022-01-16 22:01:25 +0800
  * @Author      : JackChou
- * @LastEditTime: 2022-01-16 23:59:10 +0800
+ * @LastEditTime: 2022-01-20 00:09:36 +0800
  * @LastEditors : JackChou
 -->
 <template>
@@ -63,7 +63,7 @@ export default {
       // myRatingComponent.value = 4;
       myRatingComponent.setAttribute('value', 4)
       console.log('set value')
-      myRatingComponent.getValue({ maxValue: 10, value: 5 }).then(value => {
+      myRatingComponent && myRatingComponent.getValue({ maxValue: 10, value: 5 }).then(value => {
         console.log('get value', value)
       })
       console.log(this.$refs.myRating)
