@@ -5,6 +5,37 @@
 ```bash
 "wc": "vue-cli-service build --target wc --name ng-bi ./src/components/*.vue"
 ```
+
+## 如何快速部署 gh-pages
+
+gh-pages是gihub提供给组件、个人和项目托管静态页面的服务，可来要部署react、vue、angular 等项目，用来展示成果。
+
+如何部署vue项目呢？
+
+1. 安装依赖
+
+```bash
+npm i -D gh-pages
+```
+
+2. 配置脚本
+
+```bash 
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+```
+
+3. 修改 build 输出目录
+
+由于脚本使用 build 目录作为资源目录，但是 vue-cli 的编译输出目录时 dist, 需要统一，修改 vue-cli输出目录。
+
+`vue.config.js`
+```js 
+module.exports = {
+  publicPath: './',
+  outputDir: 'build'
+}
+```
 ## Project setup
 ```
 npm install
