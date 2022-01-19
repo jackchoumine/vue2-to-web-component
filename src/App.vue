@@ -3,6 +3,7 @@
     <div id="nav">
       <!-- <router-link to="/">Home</router-link> | -->
       <!-- <router-link to="/about">About</router-link> -->
+      <h1>vue component 转为 web component</h1>
       <Home/>
     </div>
     <!-- <router-view/> -->
