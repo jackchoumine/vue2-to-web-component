@@ -3,7 +3,7 @@
 记录 vue component 转为 web component
 
 ```bash
-"wc": "vue-cli-service build --target wc --name ng-bi './src/components/*.vue'"
+"wc": "vue-cli-service build --target wc --name ng-bi ./src/components/*.vue"
 ```
 ## Project setup
 ```
