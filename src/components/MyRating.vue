@@ -2,7 +2,7 @@
  * @Description :
  * @Date        : 2022-01-16 22:01:25 +0800
  * @Author      : JackChou
- * @LastEditTime: 2022-01-20 00:09:36 +0800
+ * @LastEditTime: 2022-10-20 02:48:29 +0800
  * @LastEditors : JackChou
 -->
 <template>
@@ -19,6 +19,8 @@
     />
     <!-- NOTE 单独设置 默认属性 -->
     <Button :type="type" v-bind="buttonOptions" @click="changeRating">修改评价</Button>
+    <hr>
+<a href="https://github.com/jackchoumine/vue2-to-web-component">github 仓库</a>
   </div>
 </template>
 
